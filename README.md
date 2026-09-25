@@ -132,15 +132,18 @@ The actual results can be seen in the notebook.
 
 ## Results
 
-The notebook contains visualizations and evaluation results from the trained model.
+### Diagnosis Distribution
 
-Some of the outputs include:
+![Diagnosis Distribution](diagnosis_distribution.png)
 
-Benign vs malignant case distribution
-Classification report
-Confusion matrix
+### Confusion Matrix
 
-I have kept the actual results in the notebook rather than adding values here that could change depending on how the notebook is run.
+![Confusion Matrix](Conffusion_matrix_heatmap.png)
+
+### Classification Report
+
+![Classification Report](Classification_Report.png)
+
 
 
 
