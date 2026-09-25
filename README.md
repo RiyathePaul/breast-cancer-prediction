@@ -135,15 +135,16 @@ The actual results can be seen in the notebook.
 
 ### Diagnosis Distribution
 
-<img src="./diagnosis_distribution.png" alt="Diagnosis Distribution" width="700">
+![Diagnosis Distribution](https://raw.githubusercontent.com/RiyathePaul/breast-cancer-prediction/main/diagnosis_distribution.png)
 
 ### Confusion Matrix
 
-<img src="./Conffusion_matrix_heatmap.png" alt="Confusion Matrix" width="700">
+![Confusion Matrix](https://raw.githubusercontent.com/RiyathePaul/breast-cancer-prediction/main/Conffusion_matrix_heatmap.png)
 
 ### Classification Report
 
-<img src="./Classification_Report.png" alt="Classification Report" width="700">
+![Classification Report](https://raw.githubusercontent.com/RiyathePaul/breast-cancer-prediction/main/Classification_Report.png)
+
 
 
 
