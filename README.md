@@ -1,76 +1,68 @@
 # Breast Cancer Prediction using Machine Learning
 
-This is a beginner-level machine learning project where I worked on predicting whether a breast tumor is **benign or malignant** using Python and Logistic Regression.
+This is a beginner-level machine learning project where I worked on predicting whether a breast tumor is **benign** or **malignant** using Python and Logistic Regression.
 
-I made this project to get more comfortable with the basic machine learning workflow, especially data preprocessing, visualization, model training, and evaluating the results.
+The project helped me understand the basic workflow of a machine learning project, including data preprocessing, visualization, model training, and evaluation.
 
-> **Note:** This project is only for educational purposes and should not be used as a medical diagnostic tool.
+> **Note:** This project is created for educational purposes only. It is not a medical diagnostic tool.
 
 ---
 
 ## About the Project
 
-The main idea of this project is to use the information provided in the dataset to predict the diagnosis of a tumor.
+The goal of this project is to build a machine learning model that can classify breast tumors into two categories:
 
-I followed these steps while building the project:
+- **Benign (B)** – non-cancerous
+- **Malignant (M)** – cancerous
 
-1. Loaded the dataset
-2. Cleaned the unnecessary columns
-3. Explored and visualized the data
-4. Separated the features and target variable
-5. Split the data into training and testing sets
-6. Scaled the numerical features
-7. Trained a Logistic Regression model
-8. Made predictions on the test data
-9. Evaluated the model
+The dataset contains different measurements related to breast tumor characteristics. These features are used to train a Logistic Regression model.
 
 ---
 
 ## Dataset
 
-The dataset used in this project is `Cancer_Data.csv`.
+The dataset used in this project is:
 
-The `diagnosis` column contains two types of values:
+**Cancer_Data.csv**
 
-- `B` – Benign
-- `M` – Malignant
+It contains measurements of breast tumor characteristics along with the diagnosis.
 
-For training the machine learning model, I converted these into numerical values:
+The target variable is:
 
-- `0` – Benign
-- `1` – Malignant
+- `B` → Benign
+- `M` → Malignant
 
-The dataset contains several numerical features related to characteristics of the cell nuclei.
+Some unnecessary columns such as `id` and `Unnamed: 32` were removed during preprocessing.
 
 ---
 
 ## Machine Learning Model
 
-### Logistic Regression
+I used **Logistic Regression** for classification.
 
-I used **Logistic Regression** for this project because the problem involves two possible classes: benign and malignant.
+Logistic Regression is a supervised machine learning algorithm commonly used for binary classification problems.
 
-Before training the model, I used `StandardScaler` to standardize the numerical features.
+In this project, the model predicts:
 
----
+```text
+0 → Benign
+1 → Malignant
 
 ## Tools and Libraries
 
-I used the following tools and Python libraries:
+The project was developed using Python and the following libraries:
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Jupyter Notebook
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+Jupyter Notebook
+VS Code
 
----
 
 ## Project Workflow
-
-```text
 Cancer Dataset
       ↓
 Load Data
@@ -95,11 +87,13 @@ Evaluation
 ## Data Preprocessing
 
 Some of the preprocessing steps I performed were:
+
 Removed unnecessary columns such as id and Unnamed: 32
 Converted B and M into 0 and 1
 Separated the input features from the target variable
 Split the data into training and testing data
 Standardized the features using StandardScaler
+
 
 
 ## Model Evaluation
@@ -129,36 +123,25 @@ Incorrectly classified as malignant
 
 The actual results can be seen in the notebook.
 
-
-
 ## Results
-
-### Diagnosis Distribution
-
-![Diagnosis Distribution](https://raw.githubusercontent.com/RiyathePaul/breast-cancer-prediction/main/diagnosis_distribution.png)
-
-### Confusion Matrix
-
-![Confusion Matrix](https://raw.githubusercontent.com/RiyathePaul/breast-cancer-prediction/main/Conffusion_matrix_heatmap.png)
-
-### Classification Report
-
-![Classification Report](https://raw.githubusercontent.com/RiyathePaul/breast-cancer-prediction/main/Classification_Report.png)
-
-
-
-
-## Project Files
+Diagnosis Distribution
+<img src="./diagnosis_distribution.png" alt="Diagnosis Distribution">
+Confusion Matrix
+<img src="./Conffusion_matrix_heatmap.png" alt="Confusion Matrix">
+Classification Report
+<img src="./Classification_Report.png" alt="Classification Report">
+Project Files
 breast-cancer-prediction/
 │
 ├── Breast_Cancer_Prediction_test.ipynb
 ├── Cancer_Data.csv
+├── diagnosis_distribution.png
+├── Conffusion_matrix_heatmap.png
+├── Classification_Report.png
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
-
-## How to Run
+How to Run
 
 If you want to try the project yourself:
 
@@ -180,8 +163,7 @@ in Jupyter Notebook or VS Code.
 
 Run the cells from top to bottom to load the dataset, train the model, and see the results.
 
-
-## What I Learned
+What I Learned
 
 While working on this project, I got hands-on practice with:
 
@@ -198,7 +180,7 @@ Reading a confusion matrix
 
 This project also helped me understand how the different steps of a basic machine learning project fit together.
 
-## Future Improvements
+Future Improvements
 
 There are several things I could add to this project in the future, such as:
 
@@ -209,11 +191,11 @@ Cross-validation
 ROC-AUC analysis
 Adding more visualizations
 Creating a simple web interface for making predictions
+Author
 
-
-## Author
 Riya Paul
 
 This project was created as part of my learning journey in Python and Machine Learning.
 
-This version sounds much more like **a student explaining their own project** rather than a generated project template. It also avoids pretending the project is more advanced than it actually is.
+
+**Important:** After pasting this, make sure those **3 PNG files are in the same root folder as `README.md`** on GitHub. Then commit the README and refresh the repository page.
