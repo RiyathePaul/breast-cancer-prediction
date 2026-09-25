@@ -32,37 +32,39 @@ The target variable is:
 - `B` → Benign
 - `M` → Malignant
 
-Some unnecessary columns such as `id` and `Unnamed: 32` were removed during preprocessing.
-
 ---
 
 ## Machine Learning Model
 
 I used **Logistic Regression** for classification.
 
-Logistic Regression is a supervised machine learning algorithm commonly used for binary classification problems.
-
 In this project, the model predicts:
 
 ```text
 0 → Benign
 1 → Malignant
+```
+
+---
 
 ## Tools and Libraries
 
 The project was developed using Python and the following libraries:
 
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-Jupyter Notebook
-VS Code
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+- VS Code
 
+---
 
 ## Project Workflow
+
+```text
 Cancer Dataset
       ↓
 Load Data
@@ -82,55 +84,71 @@ Logistic Regression
 Prediction
       ↓
 Evaluation
+```
 
+---
 
 ## Data Preprocessing
 
 Some of the preprocessing steps I performed were:
 
-Removed unnecessary columns such as id and Unnamed: 32
-Converted B and M into 0 and 1
-Separated the input features from the target variable
-Split the data into training and testing data
-Standardized the features using StandardScaler
+- Removed unnecessary columns such as `id` and `Unnamed: 32`
+- Converted `B` and `M` into `0` and `1`
+- Separated the input features from the target variable
+- Split the data into training and testing data
+- Standardized the features using `StandardScaler`
 
-
+---
 
 ## Model Evaluation
 
 After training the model, I evaluated its performance using:
 
-Accuracy
+### Accuracy
 
 Accuracy shows the percentage of predictions that were classified correctly.
 
-Classification Report
+### Classification Report
 
 The classification report gives information about:
 
-Precision
-Recall
-F1-score
-Support
-Confusion Matrix
+- Precision
+- Recall
+- F1-score
+- Support
+
+### Confusion Matrix
 
 I also used a confusion matrix to see how many predictions were:
 
-Correctly classified as benign
-Correctly classified as malignant
-Incorrectly classified as benign
-Incorrectly classified as malignant
+- Correctly classified as benign
+- Correctly classified as malignant
+- Incorrectly classified as benign
+- Incorrectly classified as malignant
 
 The actual results can be seen in the notebook.
 
+---
+
 ## Results
-Diagnosis Distribution
+
+### Diagnosis Distribution
+
 <img src="./diagnosis_distribution.png" alt="Diagnosis Distribution">
-Confusion Matrix
+
+### Confusion Matrix
+
 <img src="./Conffusion_matrix_heatmap.png" alt="Confusion Matrix">
-Classification Report
+
+### Classification Report
+
 <img src="./Classification_Report.png" alt="Classification Report">
-Project Files
+
+---
+
+## Project Files
+
+```text
 breast-cancer-prediction/
 │
 ├── Breast_Cancer_Prediction_test.ipynb
@@ -141,61 +159,83 @@ breast-cancer-prediction/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-How to Run
+```
+
+---
+
+## How to Run
 
 If you want to try the project yourself:
 
-1. Clone the repository
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/RiyathePaul/breast-cancer-prediction.git
-2. Open the project folder
+```
+
+### 2. Open the project folder
+
+```bash
 cd breast-cancer-prediction
-3. Install the required libraries
+```
+
+### 3. Install the required libraries
+
+```bash
 pip install -r requirements.txt
-4. Open the notebook
+```
+
+### 4. Open the notebook
 
 Open:
 
+```text
 Breast_Cancer_Prediction_test.ipynb
+```
 
 in Jupyter Notebook or VS Code.
 
-5. Run the cells
+### 5. Run the cells
 
 Run the cells from top to bottom to load the dataset, train the model, and see the results.
 
-What I Learned
+---
+
+## What I Learned
 
 While working on this project, I got hands-on practice with:
 
-Loading and working with datasets
-Cleaning data
-Visualizing data
-Preparing data for machine learning
-Splitting data into training and testing sets
-Feature scaling
-Logistic Regression
-Making predictions
-Understanding classification reports
-Reading a confusion matrix
+- Loading and working with datasets
+- Cleaning data
+- Visualizing data
+- Preparing data for machine learning
+- Splitting data into training and testing sets
+- Feature scaling
+- Logistic Regression
+- Making predictions
+- Understanding classification reports
+- Reading a confusion matrix
 
 This project also helped me understand how the different steps of a basic machine learning project fit together.
 
-Future Improvements
+---
+
+## Future Improvements
 
 There are several things I could add to this project in the future, such as:
 
-Trying other classification algorithms
-Comparing the performance of different models
-Hyperparameter tuning
-Cross-validation
-ROC-AUC analysis
-Adding more visualizations
-Creating a simple web interface for making predictions
-Author
+- Trying other classification algorithms
+- Comparing the performance of different models
+- Hyperparameter tuning
+- Cross-validation
+- ROC-AUC analysis
+- Adding more visualizations
+- Creating a simple web interface for making predictions
 
-Riya Paul
+---
+
+## Author
+
+**Riya Paul**
 
 This project was created as part of my learning journey in Python and Machine Learning.
-
-
-**Important:** After pasting this, make sure those **3 PNG files are in the same root folder as `README.md`** on GitHub. Then commit the README and refresh the repository page.
