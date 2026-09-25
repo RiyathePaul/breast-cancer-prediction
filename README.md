@@ -130,20 +130,20 @@ Incorrectly classified as malignant
 The actual results can be seen in the notebook.
 
 
+
 ## Results
 
 ### Diagnosis Distribution
 
-![Diagnosis Distribution](diagnosis_distribution.png)
+<img src="./diagnosis_distribution.png" alt="Diagnosis Distribution" width="700">
 
 ### Confusion Matrix
 
-![Confusion Matrix](Conffusion_matrix_heatmap.png)
+<img src="./Conffusion_matrix_heatmap.png" alt="Confusion Matrix" width="700">
 
 ### Classification Report
 
-![Classification Report](Classification_Report.png)
-
+<img src="./Classification_Report.png" alt="Classification Report" width="700">
 
 
 
